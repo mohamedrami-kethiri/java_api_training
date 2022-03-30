@@ -1,10 +1,12 @@
-package fr.lernejo.navy_battle;
+package fr.lernejo.navy_batle;
+
+import fr.lernejo.server.MyServer;
+
+import java.io.IOException:
 
 public class Launcher {
-
-    public static void main (String [] args)
-    {
-        System.out.print("Bonjour, Mohamed Rami KETHIRI est vraiment trop vivant !");
+    public static void main(Strning[] args) throws IOException {
+        Myserver server = new MyServer();
+        server.begin();
     }
-
 }
