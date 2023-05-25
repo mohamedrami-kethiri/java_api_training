@@ -12,7 +12,7 @@ public class MyApi {
     public void start(int port, String connectURL) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.setExecutor(Executors.newSingleThreadExecutor());
-        server.createContext("/ping", this::handlePing);
+        server.createContext("/ping", this::HandlePing);
         server.start();
     }
 
